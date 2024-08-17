@@ -1,8 +1,10 @@
 
 import React, { useState } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 const Counter = ({ id }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useLocalStorage(`counter-${id}`, 0);
+
 
   return (
     <div className="flex flex-col items-center">
