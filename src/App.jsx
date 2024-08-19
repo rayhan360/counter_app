@@ -1,9 +1,9 @@
 import './App.css'
 import Counter from './componets/Counter'
-import useWindowDimensions from './hooks/useWindowDimensions';
+
 
 function App() {
-  const { width, height } = useWindowDimensions();
+
 
   return (
     <>
@@ -13,10 +13,6 @@ function App() {
           <Counter id={1} />
           <Counter id={2} />
           <Counter id={3} />
-        </div>
-        <div>
-          <p>Window Width: {width}px</p>
-          <p>Window Height: {height}px</p>
         </div>
       </div>
     </>
